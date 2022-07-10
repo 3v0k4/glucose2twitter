@@ -1,0 +1,17 @@
+{
+  "name": "contour-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "node-fetch": "^2.6.7",
+    "twitter-api-v2": "^1.12.3"
+  }
+}
