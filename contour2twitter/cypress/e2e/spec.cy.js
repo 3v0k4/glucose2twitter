@@ -5,10 +5,10 @@ it('scrapeAndUpdateTwitterBanner', () => {
  cy.get('#password').type(Cypress.env('contourPassword'))
  cy.get('button[type="submit"]').click()
 
- cy.wait(20000)
+ cy.wait(40000)
 
- cy.get('button').contains('Generate report').parentsUntil('button').click()
- cy.get('button').contains('Patient\'s BG data').parent().click()
+ cy.contains('Generate report').click()
+ cy.get('button').contains('Patient\'s BG data').parent().click({ force: true })
 
  cy.wait(5000)
 
